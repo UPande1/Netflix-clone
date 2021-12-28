@@ -1,0 +1,299 @@
+/* root and body styles */
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+hr{
+  width: 100%;
+  border-color: grey;
+  position: relative;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  color: #999999;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Showcase top styles */
+.showcase-top {
+  position: relative;
+  z-index: 2;
+  height: 100px;
+}
+
+.showcase-top img {
+  z-index: 50;
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-60%, -50%);
+}
+
+.logo {
+  width: 160px;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+}
+
+/* Showcase styles */
+.showcase {
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  background: url('../Images/Net-Back.png') center center/cover;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+/* Showcase-Content Styles */
+.showcase-content {
+  position: relative;
+  z-index: 2;
+  width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+}
+.showcase-content input{
+
+    left: 0;
+    bottom: -8vh;
+    width: 454px;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    margin:0;
+  }
+
+.showcase-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  max-width: 750px;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.showcase-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+
+.showcase-content p {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+/* Button Styles */
+.showcase-content .btn-lg{
+
+    right: 0;
+    bottom: -8vh;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    height: 3rem;
+    width: 14rem;
+    text-align: center;
+    margin: 0;
+}
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+}
+
+/* Card styles */
+/* Card-1 styles */
+.content1 {
+  font-size: 3.8rem;
+}
+
+.content2 {
+  font-size: 1.5rem;
+}
+.card-1 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 40%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+
+}
+
+.desk-1{
+    padding-left: 80px;
+
+}
+
+.card-1 video{
+    position: relative;
+    width: 100%;
+    height: 54%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+
+}
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    display: block;
+    max-width: 100%
+}
+
+/* card-2 styles */
+.card-2 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 40% 50%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+}
+.desk-2 {
+  padding-left: 100px;
+}
+
+/* card-3 styles */
+.card-3 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 40%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+}
+.desc-3{
+    padding-left: 80px;
+}
+
+.card-3 video{
+    position: relative;
+    width: 85%;
+    height: 62%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    margin-left: 105px;
+    margin-bottom: 140px;
+}
+.card-3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+/* card-4 styles */
+.card-4 {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 40% 50%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+}
+.desk-4 {
+  padding-left: 100px;
+}
+
+/* Frequentlu asked questions styles */
+.faq{
+  text-align: center;
+}
+.questions {
+
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+
+}
+ul {
+list-style:none;
+}
+
+.questions li {
+  padding: 10px 10px;
+  margin: 5px;
+  background-color: #303030;
+  color: #fff;
+  width: 50%;
+  text-align: left;
+  font-size: 1.5rem;
+
+}
+/* Footer Sectin styles */
+.footer{
+    max-width: 60%;
+    margin: 1rem auto;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+.footer ,
+.footer a{
+    color: #757575;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+    color: #757575;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li{
+    line-height: 2.4;
+}
+
+/* media query making site responsive */
